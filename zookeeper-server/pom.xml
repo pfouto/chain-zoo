@@ -31,7 +31,20 @@
   <name>Apache ZooKeeper - Server</name>
   <description>ZooKeeper server</description>
 
+  <repositories>
+    <repository>
+      <id>jitpack.io</id>
+      <url>https://jitpack.io</url>
+    </repository>
+  </repositories>
+
   <dependencies>
+    <dependency>
+      <groupId>com.github.pfouto</groupId>
+      <artifactId>babel-core</artifactId>
+      <version>0.4.46</version>
+    </dependency>
+
     <dependency>
       <groupId>com.github.spotbugs</groupId>
       <artifactId>spotbugs-annotations</artifactId>

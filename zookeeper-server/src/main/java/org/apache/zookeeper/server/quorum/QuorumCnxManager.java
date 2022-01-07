@@ -398,7 +398,7 @@ public class QuorumCnxManager {
             closeSocket(sock);
             return;
         } catch (UnresolvedAddressException | IOException e) {
-            LOG.warn("Cannot open channel to {} at election address {}", sid, electionAddr, e);
+            LOG.warn("Cannot open channel to {} at election address {}: {}", sid, electionAddr, e.toString());
             closeSocket(sock);
             return;
         }
